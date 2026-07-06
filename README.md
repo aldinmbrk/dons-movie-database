@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 🎬 Movie Database Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Aplikasi web responsif untuk menjelajahi daftar film terpopuler, rincian rating, dan tren sinema global tahunan dengan integrasi data langsung dari TMDB API.
 
-## Available Scripts
+## 🚀 Tech Stack
 
-In the project directory, you can run:
+- **Frontend:** React JS, Bootstrap
+- **API Source:** The Movie Database (TMDB) API
+- **Deployment:** Vercel / Netlify
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 💻 Panduan Instalasi Lokal
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Ikuti langkah-langkah berikut untuk menjalankan proyek ini di komputer lokal Anda:
 
-### `npm test`
+### 1. Prasyarat
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Pastikan komputer Anda sudah terinstal **Node.js** (versi 16 atau di atasnya) dan **npm**.
 
-### `npm run build`
+### 2. Clone Repositori
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Buka terminal atau Git Bash, lalu jalankan perintah:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone git@github.com:username-anda/nama-repo.git
+cd nama-repo
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Install Dependencies
 
-### `npm run eject`
+Unduh semua library pendukung yang dibutuhkan oleh proyek:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm install
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 4. Atur Environment Variables (Jika Menggunakan API Key)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Jika proyek Anda membutuhkan API Key dari TMDB, buat file baru bernama `.env` di folder paling luar (_root_), lalu masukkan key Anda:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```env
+VITE_TMDB_API_KEY=isi_api_key_anda_di_sini
+```
 
-## Learn More
+### 5. Jalankan Server Lokal
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Nyalakan aplikasi di browser lokal Anda:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run dev
+# atau jika menggunakan template lama: npm start
+```
 
-### Code Splitting
+Buka browser dan akses alamat `http://localhost:5173` atau `http://localhost:3000`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## 🔒 Hak Cipta & Lisensi
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Proyek ini dibuat untuk keperluan portofolio personal. Seluruh data film didukung penuh oleh pihak ketiga (TMDB API).
